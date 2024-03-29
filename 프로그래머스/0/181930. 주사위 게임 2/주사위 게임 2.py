@@ -1,15 +1,12 @@
 def solution(a, b, c):
     answer = 0
-    tmp = []
-    tmp.append(a)
-    tmp.append(b)
-    tmp.append(c)   
-    tmp = set(tmp)
+    
+    tmp = set([a, b, c])
     
     if len(tmp) == 3:
         answer = a + b + c
     elif len(tmp) == 2:
-        answer = (a + b + c) * (a*a + b*b + c*c)
+        answer = (a + b + c) * (a**2 + b**2 + c**2)
     else:
-        answer = (a + b + c) * (a*a + b*b + c*c) * (a*a*a + b*b*b + c*c*c)
+        answer = (a + b + c) * (a**2 + b**2 + c**2) * (a**3 + b**3+ c**3)
     return answer
