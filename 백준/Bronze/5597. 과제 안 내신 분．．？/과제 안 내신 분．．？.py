@@ -1,4 +1,4 @@
-stu_list = [ x for x in range(1, 31) ]
+stu_list = list(range(1, 31))
 
 for i in range(28):
     stu_list.remove(int(input()))
