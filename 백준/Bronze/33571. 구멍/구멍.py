@@ -1,0 +1,20 @@
+st = input()
+
+count = st.count('B') * 2
+count += st.count('A')
+count += st.count('a')
+count += st.count('b')
+count += st.count('D')
+count += st.count('d')
+count += st.count('e')
+count += st.count('g')
+count += st.count('O')
+count += st.count('o')
+count += st.count('P')
+count += st.count('p')
+count += st.count('Q')
+count += st.count('q')
+count += st.count('R')
+count += st.count('@')
+
+print(count)
